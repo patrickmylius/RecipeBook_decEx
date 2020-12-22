@@ -11,19 +11,20 @@ import javafx.stage.Stage;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/** ******************************************************************************************************
- *   1. Semester exam                                                                                    *
- *   Creating recipe app, holding 3 recipes                                                              *
- *   1. Burger                                                                                           *
- *   2. Pizza                                                                                            *
- *   3. Tomato Soup                                                                                      *
- *                                                                                                       *
- *  Using fxml files to create UI                                                                        *
- *  Using startController to manage button click.                                                        *
- *  Implemented persistence inside GUI, sadly. Was ment to split apart and kept in persistence package.  *
- *                                                                                                       *
- *                                                                                                       *
- * *******************************************************************************************************/
+/**
+ * *****************************************************************************************************
+ * 1. Semester exam                                                                                    *
+ * Creating recipe app, holding 3 recipes                                                              *
+ * 1. Burger                                                                                           *
+ * 2. Pizza                                                                                            *
+ * 3. Tomato Soup                                                                                      *
+ * *
+ * Using fxml files to create UI                                                                        *
+ * Using startController to manage button click.                                                        *
+ * Implemented persistence inside GUI, sadly. Was ment to split apart and kept in persistence package.  *
+ * *
+ * *
+ *******************************************************************************************************/
 
 public class startController {
     @FXML
@@ -56,7 +57,7 @@ public class startController {
                     showSoup.initModality(Modality.APPLICATION_MODAL); //Locks primaryStage
                     showSoup.show();
             }
-        }catch (NullPointerException n) {
+        } catch (NullPointerException n) {
             errorText.setText("Please choice a recipe");
             errorText.setVisible(true);
         }
@@ -75,9 +76,10 @@ public class startController {
             System.out.println("No value exists");
         }
     }
+
     //Fast way to reset the window, setting current value to null, clears Container choice.
     public void reset(ActionEvent event) throws Exception {
-      recipe.setValue(null);
-      errorText.setText(null);
+        recipe.setValue(null);
+        errorText.setText(null);
     }
 }

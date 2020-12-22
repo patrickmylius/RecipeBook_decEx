@@ -25,7 +25,8 @@
             onAction="#handleRecipes">
 
     </Button>
-    <Button fx:id="reset" text="Reset" prefWidth="60" prefHeight="30" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#reset" >
+    <Button fx:id="reset" text="Reset" prefWidth="60" prefHeight="30" GridPane.columnIndex="0" GridPane.rowIndex="3"
+            onAction="#reset">
 
     </Button>
     <Text fx:id="errorText" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
