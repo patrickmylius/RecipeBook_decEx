@@ -3,12 +3,58 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.Scene?>
 <?import javafx.stage.Stage?>
-<Stage title="Burger Recipe" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.GUI.startController">
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.SplitPane?>
+<Stage title="Burger Recipe" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.GUI.recipeController">
     <scene>
-        <Scene>
-            <GridPane prefHeight="400" prefWidth="600">
-
-            </GridPane>
+        <Scene width="600" height="600">
+            <SplitPane prefWidth="200" prefHeight="300">
+                <GridPane prefHeight="300" prefWidth="200" hgap="10" vgap="10">
+                    <Label fx:id="Ingredients" text="Ingredients" style="-fx-font-size: 20" GridPane.columnIndex="0"
+                           GridPane.rowIndex="0">
+                    </Label>
+                    <Label text="4 x Burger buns" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    </Label>
+                    <Label text="1 x Iceberg salad" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    </Label>
+                    <Label text="500g x Beef" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    </Label>
+                    <Label text="2 x Garlics" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    </Label>
+                    <Label text="2 x Slices of bacon" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    </Label>
+                    <Label text="1 x Spoon of salt" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                    </Label>
+                    <Label text="2 x Eggs" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                    </Label>
+                    <Label text="3 x Semi-dried tomatoes" GridPane.columnIndex="0" GridPane.rowIndex="9">
+                    </Label>
+                    <Label text="4 x sliced Cheddar cheese" GridPane.columnIndex="0" GridPane.rowIndex="10">
+                    </Label>
+                </GridPane>
+                <GridPane prefHeight="300" prefWidth="200" hgap="10" vgap="10">
+                    <Label fx:id="howToGuide" text="Preparing the course" style="-fx-font-size: 20"
+                           GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    </Label>
+                    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" wrapText="true"
+                           text="Turn on your oven on 180¤">
+                    </Label>
+                    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" wrapText="true"
+                           text="Mash it all well together for 2-3 minutes">
+                    </Label>
+                    <Label GridPane.columnIndex="0" GridPane.rowIndex="3" wrapText="true"
+                           text="Form your beefs with the wanted sizes">
+                    </Label>
+                    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" wrapText="true"
+                           text="Grill the beefs, right before finished, you can add the cheddar">
+                    </Label>
+                </GridPane>
+            </SplitPane>
         </Scene>
     </scene>
 </Stage>

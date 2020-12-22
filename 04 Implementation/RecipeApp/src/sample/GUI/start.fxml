@@ -13,15 +13,16 @@
 
     </Label>
     <ChoiceBox fx:id="recipe" prefWidth="160" GridPane.columnIndex="1" GridPane.rowIndex="1">
-    <items>
-        <FXCollections fx:factory="observableArrayList">
-            <String fx:value="Burger"/>
-            <String fx:value="Pizza"/>
-            <String fx:value="Tomato Soup"/>
-        </FXCollections>
-    </items>
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Burger"/>
+                <String fx:value="Pizza"/>
+                <String fx:value="Tomato Soup"/>
+            </FXCollections>
+        </items>
     </ChoiceBox>
-    <Button fx:id="showRecipe" text="Ok" prefWidth="60" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#handleRecipes">
+    <Button fx:id="showRecipe" text="Ok" prefWidth="60" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="3"
+            onAction="#handleRecipes">
 
     </Button>
 </GridPane>

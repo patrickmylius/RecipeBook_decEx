@@ -3,11 +3,16 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.Scene?>
 <?import javafx.stage.Stage?>
-<Stage title="Pizza Recipe" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.GUI.startController">
+<?import javafx.scene.control.Label?>
+<Stage title="Pizza Recipe" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.GUI.recipeController">
     <scene>
         <Scene>
-            <GridPane prefHeight="400" prefWidth="600">
+            <GridPane fx:id="gridPizza" prefHeight="400" prefWidth="600" hgap="10" vgap="10">
+                <Label fx:id="Ingredients" text="Ingredients" style="-fx-font-size: 20"  GridPane.columnIndex="2" GridPane.rowIndex="0">
+                </Label>
+                <Label fx:id="howToGuide" text="Preparing the course" style="-fx-font-size: 20"  GridPane.columnIndex="20" GridPane.rowIndex="0">
 
+                </Label>
             </GridPane>
         </Scene>
     </scene>
