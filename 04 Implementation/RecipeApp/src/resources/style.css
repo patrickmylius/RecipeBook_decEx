@@ -1,0 +1,6 @@
+.grid {
+    -fx-background-image: url('fruit.jpg');
+    -fx-background-repeat: stretch;
+    -fx-content-display: center;
+    -fx-background-size: cover;
+}

@@ -15,6 +15,7 @@ import javafx.stage.Stage;
  *                                                                                                       *
  *  Using fxml files to create UI                                                                        *
  *  Using startController to manage button click.                                                        *
+ *
  *  Implemented persistence inside GUI, sadly. Was ment to split apart and kept in persistence package.  *
  *                                                                                                       *
  *                                                                                                       *
