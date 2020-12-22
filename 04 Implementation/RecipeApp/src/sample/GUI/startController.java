@@ -6,7 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import sample.Persistence.FileReaderClass;
+
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class startController {
     @FXML
@@ -36,7 +38,16 @@ public class startController {
                 showSoup.initModality(Modality.APPLICATION_MODAL); //Locks primaryStage
                 showSoup.show();
 
-
+        }
+        try {
+            FileWriter fileWriter = new FileWriter("valueLog.txt", true);
+            String value = recipe.getValue().toString();
+            fileWriter.write("Recipe chosen: " + value + "\n");
+            fileWriter.close();
+            System.out.println("Succesfully saved data value");
+        } catch (IOException e) {
+            System.out.println("Error occured, data value safe failed");
+            e.printStackTrace();
         }
     }
 }
