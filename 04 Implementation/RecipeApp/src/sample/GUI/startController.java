@@ -39,6 +39,7 @@ public class startController {
                 showSoup.show();
 
         }
+        //FileWriter saving user recipe choice in valueLog.txt
         try {
             FileWriter fileWriter = new FileWriter("valueLog.txt", true);
             String value = recipe.getValue().toString();
