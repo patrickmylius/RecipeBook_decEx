@@ -17,3 +17,5 @@ Recipe chosen: Burger
 Recipe chosen: Burger
 Recipe chosen: Pizza
 Recipe chosen: Tomato Soup
+Recipe chosen: Pizza
+Recipe chosen: Burger
