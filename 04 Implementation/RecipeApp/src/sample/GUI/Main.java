@@ -6,7 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+import sample.Persistence.FileReaderClass;
 
 
 public class Main extends Application {
@@ -17,6 +17,8 @@ public class Main extends Application {
         primaryStage.setTitle("Recipe Generator");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
+
+
     }
 
 

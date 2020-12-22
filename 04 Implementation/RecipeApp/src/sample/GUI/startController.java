@@ -3,15 +3,18 @@ package sample.GUI;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import sample.Persistence.FileReaderClass;
 
 public class startController {
     @FXML
     private ChoiceBox recipe;
 
+    //Method that handles recipe choice click
+    //Checks user value and returns the specific one.
+    @FXML
     public void handleRecipes(ActionEvent event) throws Exception {
         String recipeChoice = (String) recipe.getValue();
         switch (recipeChoice.toLowerCase()) {
@@ -33,7 +36,7 @@ public class startController {
                 showSoup.initModality(Modality.APPLICATION_MODAL); //Locks primaryStage
                 showSoup.show();
 
-        }
 
+        }
     }
 }

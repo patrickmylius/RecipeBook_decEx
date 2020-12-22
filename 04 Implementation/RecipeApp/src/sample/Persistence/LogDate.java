@@ -5,7 +5,11 @@
  * Zealand ErhvervsAkademi - 4700
  * 22-12-2020
  */
-package sample.Logic;
+package sample.Persistence;
 
-public class Recipe {
+import java.util.Date;
+
+public class LogDate {
+
+    public Date dateTime = new Date();
 }
