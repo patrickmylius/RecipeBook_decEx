@@ -7,5 +7,5 @@
  */
 package sample.GUI;
 
-public class showRecipeController {
+public class recipeController {
 }

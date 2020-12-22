@@ -3,6 +3,25 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.GUI.startController"
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<GridPane fx:id="gridPane" fx:controller="sample.GUI.startController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Label fx:id="recipe" text="Recipe" GridPane.columnIndex="0" GridPane.rowIndex="1">
+
+    </Label>
+    <ChoiceBox fx:id="classChoice" prefWidth="160" GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <items>
+        <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Burger"/>
+            <String fx:value="Pizza"/>
+            <String fx:value="Tomato Soup"/>
+        </FXCollections>
+    </items>
+    </ChoiceBox>
+    <Button fx:id="showRecipe" text="Ok" prefWidth="60" prefHeight="30" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#handleRecipes">
+
+    </Button>
 </GridPane>
